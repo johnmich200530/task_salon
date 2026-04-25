@@ -1,0 +1,297 @@
+/* --- Basic Page Setup --- */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #F0F2F5;
+  color: #374151;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Navigation --- */
+
+.main-nav {
+  background-color: #070830;
+  border-bottom: 1px solid #E5E7EB;
+  display: flex;
+  padding: 0 16px;
+}
+
+.nav-tab {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 14px;
+  color: #d8dbe1;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-tab:hover {
+  color: #4F46E5;
+}
+
+.nav-tab.active {
+  color: #4F46E5;
+  border-bottom: 2px solid #4F46E5;
+  font-weight: 500;
+}
+
+/* --- Main Container --- */
+
+.container {
+  max-width: auto;
+  background: #FFFFFF;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  border: 1px solid #E5E7EB;
+}
+
+h1 {
+  color: #1E3A5F;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Form Styling --- */
+
+.product-form {
+  margin-bottom: 0;
+}
+
+.form-row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input {
+  height: 38px;
+  width: 345%;
+  padding: 0 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #070830;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* --- Category Select --- */
+
+.form-select-styled {
+  height: 38px;
+  width: 100%;
+  padding: 0 32px 0 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236B7280' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.form-select-styled:focus {
+  border-color: #6366F1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* --- Submit Button --- */
+
+.btn-submit {
+  background-color: #4F46E5;
+  color: #FFFFFF;
+  border: none;
+  height: 38px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #4338CA;
+}
+
+/* --- Divider --- */
+
+hr {
+  border: none;
+  border-top: 1px solid #E5E7EB;
+  margin: 1.75rem 0;
+}
+
+/* --- Section Label --- */
+
+.section-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6B7280;
+  margin-bottom: 12px;
+}
+
+/* --- Table Styling --- */
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.product-table thead tr {
+  background-color: #070830;
+}
+
+.product-table th {
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #d8dbe1;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.product-table td {
+  padding: 13px 14px;
+  color: #374151;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.product-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.product-table tbody tr:hover td {
+  background-color: #cdd1d4;
+}
+
+.td-id {
+  color: #9CA3AF;
+}
+
+.td-name {
+  font-weight: 500;
+}
+
+.td-price {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 13px;
+}
+
+/* --- Category Badge --- */
+
+.category-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #4338CA;
+}
+
+/* --- Action Buttons --- */
+
+.btn-edit {
+  display: inline-block;
+  background-color: #2563EB;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-edit:hover {
+  background-color: #1D4ED8;
+  color: #FFFFFF;
+}
+
+.btn-delete {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px 14px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #B91C1C;
+}
+
+
+
+/* --- Cancel Button (used on edit pages) --- */
+
+.btn-cancel {
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B7280;
+  background-color: #F3F4F6;
+  border: 1px solid #D1D5DB;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-cancel:hover {
+  background-color: #E5E7EB;
+  color: #374151;
+}
+
+.order-row {
+    cursor: pointer;
+}
+
+.order-row:hover {
+    background-color: #e7f1ff;
+}
